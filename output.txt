@@ -33,13 +33,13 @@
 [etcd] Creating static Pod manifest for local etcd in "/etc/kubernetes/manifests"
 [wait-control-plane] Waiting for the kubelet to boot up the control plane as static Pods from directory "/etc/kubernetes/manifests". This can take up to 4m0s
 [kubelet-check] Initial timeout of 40s passed.
-[apiclient] All control plane components are healthy after 62.005796 seconds
+[apiclient] All control plane components are healthy after 46.507229 seconds
 [upload-config] Storing the configuration used in ConfigMap "kubeadm-config" in the "kube-system" Namespace
 [kubelet] Creating a ConfigMap "kubelet-config-1.17" in namespace kube-system with the configuration for the kubelets in the cluster
 [upload-certs] Skipping phase. Please see --upload-certs
 [mark-control-plane] Marking the node ubuntu1 as control-plane by adding the label "node-role.kubernetes.io/master=''"
 [mark-control-plane] Marking the node ubuntu1 as control-plane by adding the taints [node-role.kubernetes.io/master:NoSchedule]
-[bootstrap-token] Using token: 99cljk.ssbf6y7pf9og027t
+[bootstrap-token] Using token: u5d2vh.444d60o3an70kt2z
 [bootstrap-token] Configuring bootstrap tokens, cluster-info ConfigMap, RBAC Roles
 [bootstrap-token] configured RBAC rules to allow Node Bootstrap tokens to post CSRs in order for nodes to get long term certificate credentials
 [bootstrap-token] configured RBAC rules to allow the csrapprover controller automatically approve CSRs from a Node Bootstrap Token
@@ -63,5 +63,5 @@ Run "kubectl apply -f [podnetwork].yaml" with one of the options listed at:
 
 Then you can join any number of worker nodes by running the following on each as root:
 
-kubeadm join 192.168.43.180:6443 --token 99cljk.ssbf6y7pf9og027t \
-    --discovery-token-ca-cert-hash sha256:a0ffaf8ad59aa877364a3955df1aa5e18891f0cf1499f34cf5b7ca00d91507ca 
+kubeadm join 192.168.43.180:6443 --token u5d2vh.444d60o3an70kt2z \
+    --discovery-token-ca-cert-hash sha256:ec01ce7e557e5beb10773ce40d1f98cb66e321baf65c550a7f0fd7f10e2ee182 
